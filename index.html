@@ -1,24 +1,170 @@
-<html>
-  <body>
-    <h2> Coming soon... </h2>
-<div class="loader"></div>
-<style>
-h2{
-  position: center;
- }
-.loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Armida ART </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-</style>
-  </body>
+<body>
+<div class="header">
+<div class="container">
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="images/bgvideo.mp4" type="video/mp4">
+    </video>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo2.png" width="125px">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li> <a href="">Home</a> </li>
+                <li> <a href="">Gallery   <i class="arrow down"></i></a> 
+                    <ul class="gallery">
+                        <li> <a href="">Photography</a> </li>
+                        <li> <a href="">Paintings</a> </li>
+                        <li> <a href="">Sketch</a> </li>
+                        <li> <a href="">NFTs</a> </li>
+                    </ul>
+                </li>
+                <li> <a href="">About</a> </li>
+                <li> <a href="">Contact us</a> </li>
+                <li> <a href="">Account</a> </li>
+            </ul>
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px">
+
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Go and take a look!</h1>
+            <p>
+                Success is not always about greatness. It is about 
+                consistency.<br>Consistent hard work gains success.
+            </p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+            <video autoplay muted loop id="myVideo">
+            <source src="images/bgvideo.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+</div>
+</div>
+<!-----------  FEATURED CATEGORIES--------->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+            <img src="images/category-one.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/category-two.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/nft.jpg">
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-----------  FEATURED PICTURES--------->
+<div class="small-container">
+    <h2 class="title"> Featured Works</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/work.jpg">
+            <h4> Titulli/Emri</h4>
+            <p> $49.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/work.jpg">
+            <h4> Titulli/Emri</h4>
+            <p> $49.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/work.jpg">
+            <h4> Titulli/Emri</h4>
+            <p> $49.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/work.jpg">
+            <h4> Titulli/Emri</h4>
+            <p> $49.99</p>
+        </div>
+    </div>
+    <h2 class="title"> Latest Works</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/latest.jpg">
+            <h4> Titulli/Emri</h4>
+            <p> $49.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/latest.jpg">
+            <h4> Titulli/Emri</h4>
+            <p> $49.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/latest.jpg">
+            <h4> Titulli/Emri</h4>
+            <p> $49.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/latest.jpg">
+            <h4> Titulli/Emri</h4>
+            <p> $49.99</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/latest.jpg">
+            <h4> Titulli/Emri</h4>
+            <p> $49.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/latest.jpg">
+            <h4> Titulli/Emri</h4>
+            <p> $49.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-10.jpg">
+            <h4> Titulli/Emri</h4>
+            <p> $49.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-11.jpg">
+            <h4> Titulli/Emri</h4>
+            <p> $49.99</p>
+        </div>
+    </div>
+</div>
+<!----------------offer------------->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/exclusive.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p> Limited Offer on Armida ART</p>
+                <h1>Smart Band 4</h1>
+                <small> Lorem ipsum dolor sit amet consectetur, adipisicing 
+                    elit. At sequi fugiat error delectus atque accusantium, 
+                    debitis laudantium excepturi voluptas autem.
+                </small>
+                <a href="" class="btn">Buy Now &#8594;</a> 
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
