@@ -20,6 +20,7 @@ nav ul{
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    line-height: 25px;
 }
 nav ul li{
     float: left;
@@ -38,19 +39,10 @@ nav ul li ul li{
 nav ul li:hover ul li{
     display: block;
 }
-.arrow {
-    border: solid #555;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-  }
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
-.arrow:hover{
-    color: #ffd6d6;
-}
 a{
     text-decoration: none;
     color:#555;
@@ -127,6 +119,7 @@ p{
     min-width: 200px;
     margin-bottom: 50px;
     transition:transform 0.5s;
+    cursor: pointer;
 }
 .col-4 img{
     width: 100%;
@@ -192,4 +185,124 @@ small{
         width: auto;
         height: 100%;
     }
+}
+
+/*------------------------testimonials---------------*/
+
+.testimonial{
+    padding-top: 100px;  
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3 img{
+    width: 60px;
+    margin-top:20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa-solid.fa-quote-left{
+    font-size: 34px;
+    color:#ff523b;
+}
+.col-3 p{
+    margin: 12px 0;
+    color: #555;
+}
+
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color:#fff;
+    margin-bottom: 20px;
+}
+.footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.footer hr{
+    border:none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*************** media query for menu *************/
+
+@media only screen and (max-width: 845px){
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        color: #fff;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+}
+
+
+/***********************Paintings******************/
+.paintings{
+    background: #648880;
+    background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);
 }
