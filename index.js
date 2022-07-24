@@ -2,13 +2,13 @@ var MenuItems = document.getElementById("MenuItems");
     MenuItems.style.maxHeight = "200px";
     
     function menutoggle(){
-        if(MenuItems.style.maxHeight == "0.1px")
+        if(MenuItems.style.maxHeight == "0px")
             {
                 MenuItems.style.maxHeight = "200px";
             }
-        else if(MenuItems.style.Height == "20px")
+        else if(MenuItems.style.Height == "0px")
             {
-                MenuItems.style.maxHeight = "20px";
+                MenuItems.style.maxHeight = "200px";
             }
         else
             {
