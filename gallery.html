@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Armida ART </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <main>
+        <div class="header">
+            <div class="container">
+                <!----------------------------navbar-------------->
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="../index.html"><img src="../images/logo2.png" href="../index.html" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li> <a href="../index.html">Home</a> </li>
+                            <li> <a href="">Gallery   <i class="fa-solid fa-angle-down"></i> </a> 
+                                <ul class="gallery">
+                                    <li> <a href="photography/photos-page-1.html">Photography</a> </li>
+                                    <li> <a href="../paintings/page-1.html">Paintings</a> </li>
+                                    <li> <a href="sketches/sketches-page-1.html">Sketch</a> </li>
+                                    <li> <a href="www.opensea.io">NFTs</a> </li>
+                                </ul>
+                            </li>
+                            <li> <a href="../about.html">About</a> </li>
+                            <li> <a href="../contact.html">Contact us</a> </li>
+                            <li> <a href="">Account</a> </li>
+                        </ul>
+                    </nav>
+                    <img src="../images/cart.png" width="30px" height="30px">
+                    <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">
+            
+                </div>
+            </div>
+            </div>
+        <div class="slider">
+          <div class="slider--content">
+            <button class="slider__btn-left">
+              <i class="fas fa-angle-left"></i>
+            </button>
+            <div class="slider--feature">
+              <h1 class="slider--title">Explore</h1>
+              <p class="slider--text"></p>
+              <button class="slider--btn"></button>
+            </div>
+            <button class="slider__btn-right">
+              <i class="fas fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+    </main>
+    <script src="gallery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
