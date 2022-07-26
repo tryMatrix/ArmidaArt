@@ -96,15 +96,15 @@ btnLeft.addEventListener("click", function() {
 
   btnMiddle.addEventListener("click", function gotoUrl() {
     if(slideCounter === 0){
-        window.location.assign("http://127.0.0.1:5500/photography/photos-page-1.html")
+        window.location.assign("https://armidaart.me/photography/photos-page-1.html")
     }
     
     else if (slideCounter === sliderImages.length - 1){
-        window.location.assign("http://127.0.0.1:5500/sketches/sketches-page-1.html")
+        window.location.assign("https://armidaart.me/sketches/sketches-page-1.html")
     }
 
     else{
-        window.location.assign("http://127.0.0.1:5500/paintings/page-1.html")
+        window.location.assign("https://armidaart.me/paintings/page-1.html")
     }
 })
   
