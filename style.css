@@ -413,13 +413,164 @@ small{
 	transition: all 0.3s ease;
 }
 
+
+/****************   ABOUT   ***************/
+.about{
+    background: url(images/bg-about1.png);
+    background-position: 0 1000px;
+}
+.container-about{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 25px;
+    text-align: center;
+    
+}
+.container-about h1{
+    color: black;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+.container-about h2:hover{
+    color: black;
+    transition: 0.5s;
+    cursor: default;
+}
+.container-about h2::after{
+    transition: 0.5s;
+}
+.container-about h2{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 400;
+    border: 10px 5px 10px 5px;
+    border: #555;
+    border-color: #333;
+}
+.container-about h1:hover{
+    color: #fff;
+    transition: 0.5s;
+    cursor: default;
+}
+.about-image{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.about-image img{
+    border-radius: 50%;
+    filter:grayscale(100%)
+}
+.about-image img:hover{
+    filter: grayscale(0);
+}
+.container-about p{
+    font-style: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 3rem;
+    margin-top: 27px;
+}
+.btn-about{
+    display: inline-block;
+    padding: 2rem 4rem;
+    background: #f6f6f6;
+    font-size: 15px;
+    text-decoration: none;
+    color: #398f51;
+    border-radius: 10px;
+    transition: background 0.5s;
+    margin-bottom: 20px;
+}
+.btn-about:hover{
+    background: #dadada;
+}
+
+/**************** Gallery *******************/
+.slider {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+  
+.slider--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+  
+.slider--feature {
+    text-align: center;
+}
+  
+.slider--title {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+  
+.slider--text {
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+}
+.slider__btn-right,
+.slider__btn-left {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 4rem;
+  color: #eee;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.slider--btn {
+  background: #fff;
+  text-transform: uppercase;
+  border: none;
+  color: #444;
+  outline: none;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+}
+.slider--btn:hover {
+    color: white;
+    background-color: #398f51;
+    transform: 0.5s;
+}
+.slider__btn-left:hover,
+.slider__btn-right:hover {
+  transform: scale(0.95);
+  color: #24262b;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 /*responsive*/
 @media only screen and (max-width: 845px){
 
 
     nav ul{
         position: absolute;
-        top: 70px;
         left: 0;
         background: #333;
         width: 100%;
@@ -437,6 +588,15 @@ small{
     .menu-icon{
         display: block;
         cursor: pointer;
+    }
+    .container-about h2{
+        font-size: 3rem;
+    }
+    .container-about{
+        width: 100%;
+    }
+    .container-about h2:hover{
+        color: #fff;
     }
 }
 
